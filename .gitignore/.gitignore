@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<sting.h>
+
+void f(int n)
+{
+	if (n)
+		f(n / 2);
+	else
+		return;
+	printf("%d", n % 2）
+		int main(int argc, char **argv)
+	{
+		char c
+		int l, i, j;
+		for (i = 1; i < strlen(argv[2]); i++)
+		{
+			c = argv[2][i];
+			if (c == 'd')
+			{
+				printf("Decimal table: %d\n", l);// 将十进制直接输出
+				continue;
+			}
+			if (c == 'x')
+			{
+				printf("Hex table: %x\n", l);// 将十进制转化为十六进制
+				continue;
+			}
+			if (c == 'b') 
+			{
+				printf("Binary table: %b\n", 1);// 将十进制转化为二进制
+				continue;
+			}
+			if (c == 'o')
+			{
+				printf("Octal table: %o\n", l);// 将十进制转化为八进制
+				continue;
+			}
+			printf("error: Unknow args\n");
+
+			return 1;
+		}
+		return 0;
+	}
+}
